@@ -116,7 +116,7 @@ window.onload = function() {
   
       document.getElementById('endangermentSites').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTI6Sc00BSkhS7mHx0pAlzMgXXrGCP5WfB40aMTf_gs5MlIqmQfnAGc905YmUtSYGbFVvmCCOl27jpT/pub?start=false&loop=false&delayms=3000"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTI6Sc00BSkhS7mHx0pAlzMgXXrGCP5WfB40aMTf_gs5MlIqmQfnAGc905YmUtSYGbFVvmCCOl27jpT/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>');
       });
   
   
