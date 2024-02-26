@@ -370,3 +370,101 @@ body {
     background-color: #E4C3D1;
   }
   
+  
+  #chapter3Pq {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8px;
+    background-color: #fff;
+    color: #573F4C;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  #chapter3Pq:hover {
+    background-color: #E4C3D1;
+  }
+  
+  #chapter8Pq {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8px;
+    background-color: #fff;
+    color: #573F4C;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  #chapter8Pq:hover {
+    background-color: #E4C3D1;
+  }
+  
+  #chapter7Pq {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8px;
+    background-color: #fff;
+    color: #573F4C;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  #chapter7Pq:hover {
+    background-color: #E4C3D1;
+  }
+  
+  #chapter9Pq {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8px;
+    background-color: #fff;
+    color: #573F4C;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  #chapter9Pq:hover {
+    background-color: #E4C3D1;
+  }
+  
+  
+  #directionalTermsPq {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8px;
+    background-color: #fff;
+    color: #573F4C;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  #directionalTermsPq:hover {
+    background-color: #E4C3D1;
+  }
+  
+  #muscleConceptsPq {
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 8px;
+    background-color: #fff;
+    color: #573F4C;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  #muscleConceptsPq:hover {
+    background-color: #E4C3D1;
+  }
+  
