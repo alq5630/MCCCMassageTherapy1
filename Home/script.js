@@ -179,6 +179,7 @@ window.onload = function() {
         loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vRuaYeXTjX0Ie7vCAC58TSDnFqMy_UketfT_kdOcKIRbfjPsyDkcOLNrnq_fNut33B1HrFD4ylQf_bS/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
       });
   
+    });
 
  //Theory Exam #2
  document.getElementById('link3').addEventListener('click', function(e) {
@@ -667,4 +668,3 @@ loadMainContent('<img src="https://assets-global.website-files.com/6022b8f7186c4
       document.querySelector('.content').innerHTML = content;
     }
   });
-  
