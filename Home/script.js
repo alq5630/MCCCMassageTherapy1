@@ -538,7 +538,7 @@ loadMainContent('<img src="https://assets-global.website-files.com/6022b8f7186c4
   sidebarContent += '<a href="#" id="chapter8Pq">Chapter 8: Massage Techniques</a><br>';
   sidebarContent += '<a href="#" id="chapter7Pq">Chapter 7: Body Mechanics, Client Positioning, and Draping</a><br>';
   sidebarContent += '<a href="#" id="chapter9Pq">Chapter 9: Standard Precautions, Contraindications, and Emergency Preparedness</a><br>';
-  
+
 
 
 //Theory Exam #3
@@ -666,5 +666,5 @@ loadMainContent('<img src="https://assets-global.website-files.com/6022b8f7186c4
     function loadMainContent(content) {
       document.querySelector('.content').innerHTML = content;
     }
-  };
+  });
   
