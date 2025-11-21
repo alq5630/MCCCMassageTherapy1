@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 1 · Course Overview and Tools of the Trade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Shared cozy spa styles -->
+    <link rel="stylesheet" href="assets/css/massage-curriculum.css">
+
+    <!-- Module specific logic -->
+    <script defer src="assets/js/module-1-tools.js"></script>
+</head>
+<body class="mc-body">
+
+<header class="mc-header">
+    <div class="mc-shell">
+        <div class="mc-header-main">
+            <div>
+                <p class="mc-badge">Massage Therapy Night Class</p>
+                <h1 class="mc-title">Module 1 · Course Overview and Tools of the Trade</h1>
+                <p class="mc-subtitle">
+                    Welcome to the hands on track. This module orients students to the course,
+                    the treatment room, and the tools they will use on every client.
+                </p>
+            </div>
+            <div class="mc-progress-card" id="moduleProgressCard">
+                <p class="mc-progress-label">Module progress</p>
+                <div class="mc-progress-bar">
+                    <div class="mc-progress-fill" id="moduleProgressFill"></div>
+                </div>
+                <p class="mc-progress-text" id="moduleProgressText">0 percent complete</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="mc-shell mc-main">
+
+    <!-- Section: Learning goals -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Learning goals for Module 1</h2>
+            <p>
+                By the end of this module, students should be able to:
+            </p>
+        </div>
+        <div class="mc-card mc-card-soft">
+            <ul class="mc-list">
+                <li>Describe the overall flow and expectations of the night class.</li>
+                <li>Identify the basic tools used in a massage treatment room and name their purpose.</li>
+                <li>Adjust table height for safe body mechanics for both therapist and client.</li>
+                <li>Explain at least three body mechanics principles they will apply during the back routine.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section: Course overview accordion -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Course overview</h2>
+            <p>
+                Use this quick outline to ground students in the journey from first back routine
+                through sports massage and business projects.
+            </p>
+        </div>
+
+        <div class="mc-accordion" data-track-step="overview">
+            <button class="mc-accordion-item">
+                <span>How the hands on course is structured</span>
+                <span class="mc-accordion-icon">+</span>
+            </button>
+            <div class="mc-accordion-panel">
+                <p>
+                    The course begins with tools, hygiene, and body mechanics, then moves into the back routine,
+                    full body flow, lymphatic drainage, clinical techniques, modalities, Asian bodywork, and
+                    business practices. Theory exams and practicums are woven throughout so students keep
+                    practicing what they are learning on the table.
+                </p>
+            </div>
+
+            <button class="mc-accordion-item">
+                <span>What students are responsible for</span>
+                <span class="mc-accordion-icon">+</span>
+            </button>
+            <div class="mc-accordion-panel">
+                <ul class="mc-list">
+                    <li>Arrive prepared with required readings completed.</li>
+                    <li>Come dressed and ready to give and receive bodywork.</li>
+                    <li>Communicate clearly about injuries, pain, or limitations.</li>
+                    <li>Practice safe draping and professional boundaries at all times.</li>
+                </ul>
+            </div>
+
+            <button class="mc-accordion-item">
+                <span>How this module connects to the rest of the course</span>
+                <span class="mc-accordion-icon">+</span>
+            </button>
+            <div class="mc-accordion-panel">
+                <p>
+                    Everything in this opening module becomes muscle memory later. How students set up a table,
+                    adjust height, use bolsters, and stand behind the table will either protect their bodies or
+                    wear them out. This foundation carries into every practicum and every client they touch.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Tools flip cards -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Tools of the trade</h2>
+            <p>
+                Invite students to explore the core tools they will handle in the treatment room. They tap to
+                flip each card for key teaching points.
+            </p>
+        </div>
+
+        <div class="mc-grid mc-grid-2 mc-flip-grid" data-track-step="tools">
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Massage table</p>
+                        <p class="mc-flip-front-text">
+                            Tap to review how table height affects your body.
+                        </p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Table height should let your elbows stay soft, not locked.</li>
+                            <li>For broad strokes, table can be a bit lower.</li>
+                            <li>For detailed work, raise the table to protect your back.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Bolsters and pillows</p>
+                        <p class="mc-flip-front-text">
+                            Tap to see how bolsters support client comfort.
+                        </p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Under ankles in prone to ease low back tension.</li>
+                            <li>Under knees in supine to soften hip flexors.</li>
+                            <li>Extra support under shoulders or chest when needed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Lubricants</p>
+                        <p class="mc-flip-front-text">
+                            Tap to compare lotions, creams, and oils.
+                        </p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Lotion absorbs faster and gives more grip.</li>
+                            <li>Cream offers a balance of glide and control.</li>
+                            <li>Oil gives longer glide but can feel heavy for some clients.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Linens and blankets</p>
+                        <p class="mc-flip-front-text">
+                            Tap for draping reminders.
+                        </p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Use clean, soft linens every session.</li>
+                            <li>Keep the sheet snug to help clients feel secure.</li>
+                            <li>Layer blankets to adjust for temperature and comfort.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section: Body mechanics check -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Body mechanics quick check</h2>
+            <p>
+                Students read the scenario and choose the best body mechanics option. Feedback appears
+                right under the question.
+            </p>
+        </div>
+
+        <div class="mc-card mc-card-soft" data-track-step="mechanics-quiz">
+            <p class="mc-question">
+                You are about to begin a basic back routine on a client who is taller than you. Which setup
+                protects your body the most?
+            </p>
+
+            <form id="mechanicsQuizForm" class="mc-quiz">
+                <label class="mc-quiz-option">
+                    <input type="radio" name="mechanicsChoice" value="A">
+                    <span>Keep the table high so you do not have to bend your knees as much.</span>
+                </label>
+                <label class="mc-quiz-option">
+                    <input type="radio" name="mechanicsChoice" value="B">
+                    <span>Lower the table so you can hinge at your hips with knees soft and weight shifting.</span>
+                </label>
+                <label class="mc-quiz-option">
+                    <input type="radio" name="mechanicsChoice" value="C">
+                    <span>Raise the table and reach with straight arms to cover more area per stroke.</span>
+                </label>
+
+                <button type="submit" class="mc-button mc-button-primary">
+                    Check my answer
+                </button>
+            </form>
+
+            <div id="mechanicsQuizFeedback" class="mc-quiz-feedback" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <!-- Section: Reflection -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Reflection prompt</h2>
+            <p>
+                This gives students a place to connect the material to their own body and history with pain or fatigue.
+            </p>
+        </div>
+
+        <div class="mc-card mc-card-soft" data-track-step="reflection">
+            <p class="mc-reflection-question">
+                Where in your own body do you already feel strain when you work or study, and what is one body
+                mechanics habit you want to practice from this module to protect that area?
+            </p>
+            <textarea id="reflectionInput" class="mc-textarea" rows="4"
+                      placeholder="Students can type their thoughts here. This saves in their browser only."></textarea>
+            <div class="mc-reflection-actions">
+                <button type="button" class="mc-button mc-button-secondary" id="saveReflectionButton">
+                    Save reflection to this device
+                </button>
+                <span id="reflectionStatus" class="mc-reflection-status"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Module wrap up -->
+    <section class="mc-section mc-section-last">
+        <div class="mc-card mc-card-highlight">
+            <h2>Next steps</h2>
+            <p>
+                Once students are comfortable with the room, tools, and basic body mechanics language,
+                they are ready to move into the back routine module where they will start putting hands on
+                and building flow.
+            </p>
+            <button type="button" class="mc-button mc-button-primary mc-button-full">
+                Mark Module 1 complete
+            </button>
+        </div>
+    </section>
+
+</main>
+
+<footer class="mc-footer">
+    <div class="mc-shell">
+        <p class="mc-footer-text">
+            Massage Therapy Night Class · Module 1 · Course Overview and Tools of the Trade
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
