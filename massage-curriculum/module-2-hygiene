@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 2 · Disease Transmission and Hygiene</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Cozy spa theme -->
+    <link rel="stylesheet" href="assets/css/massage-curriculum.css">
+
+    <!-- Module 2 logic -->
+    <script defer src="assets/js/module-2-hygiene.js"></script>
+</head>
+<body class="mc-body">
+
+<header class="mc-header">
+    <div class="mc-shell">
+        <div class="mc-header-main">
+            <div>
+                <p class="mc-badge">Massage Therapy Night Class</p>
+                <h1 class="mc-title">Module 2 · Disease Transmission and Hygiene</h1>
+                <p class="mc-subtitle">
+                    This module equips students with the infection control skills they need to practice massage safely,
+                    protect clients, and maintain a clean treatment environment.
+                </p>
+            </div>
+
+            <div class="mc-progress-card">
+                <p class="mc-progress-label">Module progress</p>
+                <div class="mc-progress-bar">
+                    <div class="mc-progress-fill" id="moduleProgressFill"></div>
+                </div>
+                <p class="mc-progress-text" id="moduleProgressText">0 percent complete</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main class="mc-shell mc-main">
+
+    <!-- Learning goals -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Learning goals for Module 2</h2>
+            <p>
+                By the end of this module, students should be able to:
+            </p>
+        </div>
+
+        <div class="mc-card mc-card-soft">
+            <ul class="mc-list">
+                <li>Describe how disease transmission occurs in a massage environment.</li>
+                <li>Apply standard precautions and safe hygiene practices.</li>
+                <li>Identify common contraindications and precautions.</li>
+                <li>Recognize anatomical endangerment sites and explain why they matter.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Disease transmission accordion -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>How disease transmission happens</h2>
+            <p>
+                Students open each section to explore the key pathways of infection in a clinical environment.
+            </p>
+        </div>
+
+        <div class="mc-accordion" data-track-step="disease">
+            <button class="mc-accordion-item">
+                <span>Direct contact transmission</span>
+                <span class="mc-accordion-icon">+</span>
+            </button>
+            <div class="mc-accordion-panel">
+                <p>
+                    Pathogens can pass from therapist to client or client to therapist through direct physical contact.
+                    This includes contaminated hands, unwashed forearms, or touching open skin.
+                </p>
+            </div>
+
+            <button class="mc-accordion-item">
+                <span>Indirect contact transmission</span>
+                <span class="mc-accordion-icon">+</span>
+            </button>
+            <div class="mc-accordion-panel">
+                <p>
+                    This occurs when pathogens spread through shared objects such as lotion bottles, linens,
+                    headrests, door handles, or contaminated tools.
+                </p>
+            </div>
+
+            <button class="mc-accordion-item">
+                <span>Droplet and airborne transmission</span>
+                <span class="mc-accordion-icon">+</span>
+            </button>
+            <div class="mc-accordion-panel">
+                <p>
+                    Talking, coughing, or sneezing can transmit pathogens through the air. Proper ventilation,
+                    therapist health screening, and rescheduling sick clients protect the treatment room.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tools and hygiene flip cards -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Hygiene essentials</h2>
+            <p>
+                Students tap each card to learn the most important hygiene habits for massage therapists.
+            </p>
+        </div>
+
+        <div class="mc-grid mc-grid-2 mc-flip-grid" data-track-step="hygiene">
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Hand washing</p>
+                        <p class="mc-flip-front-text">Tap to review proper hand hygiene.</p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Wash hands before and after every client.</li>
+                            <li>Use warm water and soap for at least 20 seconds.</li>
+                            <li>Dry completely using a clean towel or paper towels.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Surface sanitation</p>
+                        <p class="mc-flip-front-text">Tap to review surface cleaning steps.</p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Disinfect all surfaces between clients.</li>
+                            <li>Pay extra attention to face cradle, table, and bolsters.</li>
+                            <li>Use approved disinfectants with correct contact time.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Linens</p>
+                        <p class="mc-flip-front-text">Tap for linen handling rules.</p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Use fresh linens for every client.</li>
+                            <li>Place used linens in a closed bin.</li>
+                            <li>Wash in hot water with appropriate detergents.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+
+            <button class="mc-flipcard" type="button">
+                <div class="mc-flip-inner">
+                    <div class="mc-flip-front">
+                        <p class="mc-label">Therapist health</p>
+                        <p class="mc-flip-front-text">Tap for therapist illness policy.</p>
+                    </div>
+                    <div class="mc-flip-back">
+                        <ul class="mc-list">
+                            <li>Do not work while ill.</li>
+                            <li>Reschedule clients if you show signs of infection.</li>
+                            <li>Wear a mask if recovering from respiratory symptoms.</li>
+                        </ul>
+                    </div>
+                </div>
+            </button>
+
+        </div>
+    </section>
+
+
+
+    <!-- Hotspot activity: Endangerment sites -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Endangerment sites</h2>
+            <p>
+                Students tap labeled areas to learn what to avoid and why these sites matter in bodywork.
+            </p>
+        </div>
+
+        <div class="mc-card mc-card-soft" data-track-step="endangerment">
+            <p class="mc-question">Tap each site to review what to avoid and how to work safely around it.</p>
+
+            <div class="mc-endangerment-map">
+                <button class="mc-endangerment-spot" data-info="Avoid deep pressure over the carotid artery. Use gentle strokes on the neck.">Neck</button>
+                <button class="mc-endangerment-spot" data-info="Avoid direct pressure to the axilla. Lymph nodes and neurovascular bundles lie here.">Axilla</button>
+                <button class="mc-endangerment-spot" data-info="Avoid pressure to the medial upper arm along the brachial artery.">Upper arm</button>
+                <button class="mc-endangerment-spot" data-info="Avoid deep pressure behind the knee. Popliteal artery and nerve bundle are here.">Knee</button>
+                <button class="mc-endangerment-spot" data-info="Avoid strong pressure on the abdomen unless trained and client consents.">Abdomen</button>
+            </div>
+
+            <div id="endangermentInfo" class="mc-endangerment-info"></div>
+        </div>
+    </section>
+
+
+    <!-- Quiz -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Contraindication quiz</h2>
+            <p>
+                Students read each situation and decide if massage is safe, requires adaptation, or should be postponed.
+            </p>
+        </div>
+
+        <div class="mc-card mc-card-soft" data-track-step="contra-quiz">
+
+            <p class="mc-question">
+                A client arrives with a fever of 101 but wants a light massage to relax. What do you do?
+            </p>
+
+            <form id="contraQuizForm" class="mc-quiz">
+                <label class="mc-quiz-option">
+                    <input type="radio" name="contraChoice" value="A">
+                    <span>Give the massage lightly to help reduce stress.</span>
+                </label>
+
+                <label class="mc-quiz-option">
+                    <input type="radio" name="contraChoice" value="B">
+                    <span>Postpone the appointment. Fever indicates a systemic infection.</span>
+                </label>
+
+                <label class="mc-quiz-option">
+                    <input type="radio" name="contraChoice" value="C">
+                    <span>Massage only the feet to avoid circulating pathogens.</span>
+                </label>
+
+                <button type="submit" class="mc-button mc-button-primary">
+                    Check my answer
+                </button>
+            </form>
+
+            <div id="contraQuizFeedback" class="mc-quiz-feedback" aria-live="polite"></div>
+        </div>
+    </section>
+
+
+
+    <!-- Reflection -->
+    <section class="mc-section">
+        <div class="mc-section-header">
+            <h2>Reflection prompt</h2>
+            <p>
+                This helps students connect hygiene and safety practices to real-life client situations.
+            </p>
+        </div>
+
+        <div class="mc-card mc-card-soft" data-track-step="reflection">
+            <p class="mc-reflection-question">
+                Think about any moment when you have felt unwell or low energy but pushed through anyway.
+                How can understanding infection control help you make better choices for yourself and clients?
+            </p>
+
+            <textarea id="reflectionInput" class="mc-textarea" rows="4"
+                placeholder="Students can type their thoughts here. This saves in their browser only."></textarea>
+
+            <div class="mc-reflection-actions">
+                <button type="button" class="mc-button mc-button-secondary" id="saveReflectionButton">
+                    Save reflection to this device
+                </button>
+                <span id="reflectionStatus" class="mc-reflection-status"></span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Wrap up -->
+    <section class="mc-section mc-section-last">
+        <div class="mc-card mc-card-highlight">
+            <h2>Next steps</h2>
+            <p>
+                With hygiene and safety established, students are ready to begin hands on practice with the back routine
+                in Module 3.
+            </p>
+
+            <button type="button" class="mc-button mc-button-primary mc-button-full" id="completeModuleButton">
+                Mark Module 2 complete
+            </button>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="mc-footer">
+    <div class="mc-shell">
+        <p class="mc-footer-text">Massage Therapy Night Class · Module 2 · Disease Transmission and Hygiene</p>
+    </div>
+</footer>
+
+</body>
+</html>
