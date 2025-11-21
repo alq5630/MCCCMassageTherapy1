@@ -5,16 +5,15 @@
     <title>Massage Therapy Curriculum | Course Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/css/massage-curriculum.css">
+    <!-- NOTE: Since index is now at root, we must point to assets inside massage-curriculum -->
+    <link rel="stylesheet" href="massage-curriculum/assets/css/massage-curriculum.css">
 
     <script>
-        // Reading progress from browser for each module
         function getProgress(key, totalSteps) {
             try {
-                const raw = localStorage.getItem(key);
-                if (!raw) return 0;
-                const parsed = JSON.parse(raw);
-                return Math.round((parsed.completedSteps.length / totalSteps) * 100);
+                const data = JSON.parse(localStorage.getItem(key));
+                if (!data || !data.completedSteps) return 0;
+                return Math.round((data.completedSteps.length / totalSteps) * 100);
             } catch (e) {
                 return 0;
             }
@@ -24,49 +23,102 @@
             const modules = [
                 { key: "mc_module1_progress", steps: 4, bar: "mod1Bar", text: "mod1Text" },
                 { key: "mc_module2_progress", steps: 5, bar: "mod2Bar", text: "mod2Text" }
-                // Add future modules here as you build them
             ];
 
             modules.forEach(m => {
                 const percent = getProgress(m.key, m.steps);
                 const bar = document.getElementById(m.bar);
                 const text = document.getElementById(m.text);
+
                 if (bar) bar.style.width = percent + "%";
                 if (text) text.textContent = percent + "% complete";
             });
         });
     </script>
+
+    <style>
+        .mc-module-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+            margin-top: 1.6rem;
+        }
+
+        .mc-module-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 1.3rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: var(--mc-radius-lg);
+            box-shadow: var(--mc-shadow-soft);
+        }
+
+        .mc-module-details {
+            max-width: 60%;
+        }
+
+        .mc-module-title {
+            margin: 0;
+            font-size: 1.15rem;
+            color: var(--mc-primary);
+            font-weight: 600;
+        }
+
+        .mc-module-desc {
+            margin: 0.25rem 0 0.8rem;
+            color: var(--mc-text-soft);
+            font-size: 0.95rem;
+        }
+
+        .mc-module-progress {
+            width: 180px;
+            text-align: right;
+        }
+
+        .mc-coming {
+            font-size: 0.9rem;
+            color: var(--mc-text-soft);
+        }
+
+        .mc-disabled {
+            opacity: 0.45;
+        }
+    </style>
 </head>
+
 
 <body class="mc-body">
 
 <header class="mc-header">
     <div class="mc-shell">
+        <p class="mc-badge">Massage Therapy Night Class</p>
         <h1 class="mc-title">Massage Therapy Curriculum</h1>
         <p class="mc-subtitle">
-            A full interactive learning experience for the Massage Therapy Night Class.  
-            Move through each module in order, build your foundation, and follow the same pacing as the live program.
+            This is your complete interactive journey through the hands-on Massage Therapy program.
         </p>
     </div>
 </header>
+
 
 <main class="mc-shell mc-main">
 
     <section class="mc-section">
         <div class="mc-section-header">
-            <h2>Start your journey</h2>
-            <p>Select a module below to enter the interactive learning experience.</p>
+            <h2>Start learning</h2>
+            <p>Select a module to begin or continue.</p>
         </div>
 
-        <!-- MODULE LIST -->
-        <div class="mc-card mc-card-soft">
+        <div class="mc-module-list">
 
             <!-- Module 1 -->
-            <div class="mc-module-row">
-                <div class="mc-module-info">
-                    <h3 class="mc-module-title">Module 1</h3>
+            <div class="mc-module-item">
+                <div class="mc-module-details">
+                    <p class="mc-module-title">Module 1</p>
                     <p class="mc-module-desc">Course Overview and Tools of the Trade</p>
-                    <a href="massage-curriculum/module-1-tools.html" class="mc-button mc-button-primary">Open Module</a>
+                    <a href="massage-curriculum/module-1-tools.html" class="mc-button mc-button-primary">
+                        Open Module
+                    </a>
                 </div>
 
                 <div class="mc-module-progress">
@@ -78,11 +130,13 @@
             </div>
 
             <!-- Module 2 -->
-            <div class="mc-module-row">
-                <div class="mc-module-info">
-                    <h3 class="mc-module-title">Module 2</h3>
+            <div class="mc-module-item">
+                <div class="mc-module-details">
+                    <p class="mc-module-title">Module 2</p>
                     <p class="mc-module-desc">Disease Transmission and Hygiene</p>
-                    <a href="massage-curriculum/module-2-hygiene.html" class="mc-button mc-button-primary">Open Module</a>
+                    <a href="massage-curriculum/module-2-hygiene.html" class="mc-button mc-button-primary">
+                        Open Module
+                    </a>
                 </div>
 
                 <div class="mc-module-progress">
@@ -93,16 +147,17 @@
                 </div>
             </div>
 
-            <!-- Placeholder for Module 3 and beyond -->
-            <div class="mc-module-row mc-module-disabled">
-                <div class="mc-module-info">
-                    <h3 class="mc-module-title">Module 3</h3>
+            <!-- Module 3 Placeholder -->
+            <div class="mc-module-item mc-disabled">
+                <div class="mc-module-details">
+                    <p class="mc-module-title">Module 3</p>
                     <p class="mc-module-desc">Massage Techniques + Start of Back Routine</p>
-                    <p class="mc-module-coming">Coming soon</p>
+                    <p class="mc-coming">Coming soon</p>
                 </div>
+
                 <div class="mc-module-progress">
                     <div class="mc-progress-bar">
-                        <div class="mc-progress-fill" style="width: 0 percent;"></div>
+                        <div class="mc-progress-fill" style="width: 0%"></div>
                     </div>
                     <p class="mc-progress-text">Not started</p>
                 </div>
@@ -113,53 +168,11 @@
 
 </main>
 
+
 <footer class="mc-footer">
     <p class="mc-footer-text">Massage Therapy Night Class • Curriculum Home</p>
 </footer>
 
-<style>
-    /* Additional cozy spa styles for the index page */
-    .mc-module-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.2rem 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-    }
-
-    .mc-module-row:last-of-type {
-        border-bottom: none;
-    }
-
-    .mc-module-info {
-        max-width: 60 percent;
-    }
-
-    .mc-module-title {
-        margin: 0 0 0.2rem;
-        font-size: 1.1rem;
-    }
-
-    .mc-module-desc {
-        margin: 0 0 0.6rem;
-        color: var(--mc-text-soft);
-    }
-
-    .mc-module-progress {
-        min-width: 180px;
-        text-align: right;
-    }
-
-    .mc-module-coming {
-        color: var(--mc-text-soft);
-        font-size: 0.9rem;
-    }
-
-    .mc-module-disabled {
-        opacity: 0.4;
-    }
-
-</style>
 
 </body>
 </html>
