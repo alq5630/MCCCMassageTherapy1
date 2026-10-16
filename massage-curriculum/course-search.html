@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Course Search Index | MCCC Massage Therapy</title><style>body{font:16px/1.5 system-ui;max-width:1050px;margin:auto;padding:30px;background:#f7f5ef;color:#17211d}h1{font:48px Georgia,serif}input{width:100%;padding:16px;font-size:18px;border:1px solid #aaa;border-radius:12px;box-sizing:border-box}.item{background:#fff;padding:16px 20px;margin:10px 0;border-radius:14px}.item a{font-weight:800;color:#315c4c;font-size:18px}.item p{margin:5px 0}.small{color:#555}</style></head><body><a href="../index.html">← Course Home</a><h1>Search the Course</h1><p>Type a topic, structure, pathology, technique or exam concept.</p><input id="q" autofocus placeholder="Try: cubital tunnel, DVT, quadriceps, osmosis, consent..."><div id="results"></div><script>
+const pages=[
+["Anatomy & Physiology Core","mblex-anatomy-physiology-core.html","homeostasis cells tissues organ systems physiology metabolism"],
+["Medical Terminology & Anatomical Language","medical-terminology-anatomical-language.html","prefix suffix root planes cavities quadrants directional proximal distal medial lateral prone supine"],
+["Cells, Tissues & Homeostasis","cells-tissues-homeostasis.html","osmosis diffusion active transport mitochondria ribosome tissue repair inflammation membranes"],
+["Skeletal System","body-system-skeletal.html","osteoblast osteoclast bone fracture axial appendicular landmarks osteoporosis osteoarthritis rheumatoid"],
+["Muscular System","body-system-muscular.html","sarcomere actin myosin motor unit NMJ contraction concentric eccentric isometric fiber"],
+["Nervous System","body-system-nervous.html","CNS PNS neuron reflex autonomic sympathetic parasympathetic dermatome pain nerve"],
+["Cardiovascular System","body-system-cardiovascular.html","heart artery vein blood SA node DVT hypertension varicose carotid"],
+["Lymphatic & Immune","body-system-lymphatic-immune.html","lymph node spleen thymus B cell T cell edema lymphedema HIV"],
+["Integumentary System","body-system-integumentary.html","skin epidermis dermis hypodermis psoriasis infection wound"],
+["Endocrine System","body-system-endocrine.html","hormone thyroid pituitary adrenal insulin glucagon diabetes"],
+["Respiratory System","body-system-respiratory.html","lung alveoli diaphragm breathing gas exchange asthma"],
+["Digestive System","body-system-digestive.html","stomach intestine liver gallbladder pancreas GERD peritoneum"],
+["Urinary System","body-system-urinary.html","kidney nephron urine electrolytes renal"],
+["Reproductive System","body-system-reproductive.html","ovary uterus testes pregnancy menstruation"],
+["Kinesiology Core","mblex-kinesiology-core.html","OIA origin insertion action joints movement ROM proprioception"],
+["Upper Body Muscle OIA","muscle-oia-upper-body.html","trapezius levator rhomboid deltoid rotator cuff supraspinatus infraspinatus teres subscapularis pectoralis SCM biceps triceps"],
+["Lower Body & Trunk OIA","muscle-oia-lower-body.html","QL erector glute piriformis hamstring quadriceps adductor TFL gastrocnemius soleus tibialis fibularis"],
+["Expanded Muscle Groups","muscle-groups-expanded.html","forearm hand pronator supinator interossei hip rotator breathing mastication abdominal"],
+["Joint Anatomy & Movement","mblex-joint-anatomy-movement.html","synovial hinge pivot saddle ball socket flexion extension abduction adduction pronation supination"],
+["Endangerment Sites Atlas","endangerment-sites-atlas.html","carotid jugular brachial plexus radial cubital femoral triangle sciatic popliteal saphenous fibular tarsal"],
+["Contraindications Decision Guide","contraindications-decision-guide.html","contraindication postpone local modification infection DVT fever red flag"],
+["Pathology Encyclopedia","pathology-encyclopedia.html","bursitis gout sprain strain tendinopathy fibromyalgia neuropathy diabetes cellulitis hernia"],
+["Pharmacology","unit-4-pharmacology.html","NSAID anticoagulant steroid insulin antihypertensive medication"],
+["Special Populations","unit-4-special-populations.html","pregnancy prenatal infant child older adult disability"],
+["Clinical Assessment","lesson-clinical-assessment-pain-rom-posture.html","pain ROM posture assessment palpation"],
+["Treatment Planning Consent Documentation","lesson-treatment-planning-consent-documentation.html","SOAP informed consent goals documentation"],
+["Soft Tissue & Technique Science","mblex-soft-tissue-technique-science.html","effleurage petrissage friction compression tapotement vibration stretch"],
+["Hydrotherapy","mblex-hydrotherapy-core.html","heat cold cryotherapy thermotherapy paraffin contrast"],
+["Trigger Point Therapy","unit-5-trigger-points.html","trigger point pressure release referred pain"],
+["Myofascial Release","unit-4-mfr.html","MFR fascia direct indirect sustained"],
+["Question Bank Set 1","mblex-question-bank-1.html","practice quiz exam questions"],
+["Question Bank Set 2","mblex-question-bank-2.html","practice quiz exam body systems pathology"]
+];
+const q=document.getElementById("q"),r=document.getElementById("results");
+function draw(){const s=q.value.toLowerCase().trim();const hits=pages.filter(x=>!s||x.join(" ").toLowerCase().includes(s));r.innerHTML=hits.map(x=>'<div class="item"><a href="'+x[1]+'">'+x[0]+'</a><p class="small">'+x[2]+'</p></div>').join("")||"<p>No indexed match yet. Try a broader term.</p>"}q.addEventListener("input",draw);draw();
+</script></body></html>
