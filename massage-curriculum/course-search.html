@@ -63,7 +63,18 @@ const pages=[
 ["Red Flags Referral Stop Rules","red-flags-referral-stop-rules.html","stroke heart attack pulmonary embolism DVT anaphylaxis neurological red flag referral stop"],
 ["SOAP Documentation Lab","soap-documentation-lab.html","SOAP subjective objective assessment plan documentation notes"],
 ["Professional Client Communication","professional-client-communication-lab.html","communication pressure consent pectoral sensitive region referral boundary scope script"],
-["MBLEx Coverage Map","mblex-coverage-map.html","content outline coverage domain anatomy kinesiology pathology effects assessment ethics professional practice"]
+["MBLEx Coverage Map","mblex-coverage-map.html","content outline coverage domain anatomy kinesiology pathology effects assessment ethics professional practice"],
+["Palpation Master Lab","palpation-master-lab.html","palpation landmark contraction confirmation assessment tissue texture tenderness"],
+["Clinical Case Lab Set 1","clinical-case-lab-1.html","case clinical reasoning proceed modify postpone refer emergency"],
+["Pathology Compare Contrast","pathology-compare-contrast.html","sprain strain osteoarthritis rheumatoid edema lymphedema radiculopathy neuropathy thrombosis embolism"],
+["Skeletal System Deep Dive","skeletal-system-deep-dive.html","osteoblast osteoclast osteocyte compact spongy bone diaphysis epiphysis ossification fracture repair"],
+["Muscle Physiology Deep Dive","muscle-physiology-deep-dive.html","epimysium perimysium endomysium sarcomere actin myosin troponin calcium ATP motor unit fiber"],
+["Integumentary Deep Dive","integumentary-system-deep-dive.html","epidermis dermis hypodermis strata sebaceous eccrine Merkel Meissner Pacinian Ruffini"],
+["Endocrine Deep Dive","endocrine-system-deep-dive.html","hypothalamus pituitary thyroid parathyroid adrenal insulin glucagon hormone feedback"],
+["Respiratory Deep Dive","respiratory-system-deep-dive.html","alveoli ventilation gas exchange diaphragm pleura oxygen carbon dioxide hemoglobin"],
+["Digestive Deep Dive","digestive-system-deep-dive.html","stomach small intestine liver gallbladder pancreas digestion absorption peristalsis"],
+["Urinary Deep Dive","urinary-system-deep-dive.html","kidney nephron glomerulus filtration reabsorption secretion ADH aldosterone"],
+["A&P Retrieval Drill 60","ap-retrieval-drill-60.html","anatomy physiology 60 active recall quiz body systems"]
 ];
 const q=document.getElementById("q"),r=document.getElementById("results");
 function draw(){const s=q.value.toLowerCase().trim();const hits=pages.filter(x=>!s||x.join(" ").toLowerCase().includes(s));r.innerHTML=hits.map(x=>'<div class="item"><a href="'+x[1]+'">'+x[0]+'</a><p class="small">'+x[2]+'</p></div>').join("")||"<p>No indexed match yet. Try a broader term.</p>"}q.addEventListener("input",draw);draw();
