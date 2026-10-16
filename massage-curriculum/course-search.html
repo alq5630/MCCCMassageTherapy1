@@ -74,7 +74,20 @@ const pages=[
 ["Respiratory Deep Dive","respiratory-system-deep-dive.html","alveoli ventilation gas exchange diaphragm pleura oxygen carbon dioxide hemoglobin"],
 ["Digestive Deep Dive","digestive-system-deep-dive.html","stomach small intestine liver gallbladder pancreas digestion absorption peristalsis"],
 ["Urinary Deep Dive","urinary-system-deep-dive.html","kidney nephron glomerulus filtration reabsorption secretion ADH aldosterone"],
-["A&P Retrieval Drill 60","ap-retrieval-drill-60.html","anatomy physiology 60 active recall quiz body systems"]
+["A&P Retrieval Drill 60","ap-retrieval-drill-60.html","anatomy physiology 60 active recall quiz body systems"],
+["Reproductive System Deep Dive","reproductive-system-deep-dive.html","ovary uterus fallopian tube menstrual ovarian cycle FSH LH fertilization pregnancy inheritance"],
+["Musculoskeletal Pathology Master","pathology-musculoskeletal-master.html","adhesive capsulitis Baker cyst bursitis fracture gout OA osteoporosis Osgood Schlatter RA sprain strain fibromyalgia plantar fasciitis"],
+["Cardiovascular Blood Lymph Pathology","pathology-cardiovascular-lymph-master.html","DVT pulmonary embolism varicose hypertension heart failure Raynaud anemia bleeding lymphedema lymphoma HIV"],
+["Nervous Pathology Master","pathology-nervous-master.html","neuropathy carpal tunnel radiculopathy sciatica MS Parkinson stroke seizure migraine Bell palsy trigeminal"],
+["Skin Infectious Pathology","pathology-skin-infectious-master.html","psoriasis eczema dermatitis tinea impetigo cellulitis herpes shingles wart burn pressure injury"],
+["Internal Systems Pathology","pathology-internal-systems-master.html","diabetes thyroid Cushing asthma COPD pneumonia GERD ulcer IBS IBD kidney UTI dialysis"],
+["Reproductive Pregnancy Pathology","pathology-reproductive-pregnancy-master.html","dysmenorrhea endometriosis PCOS fibroid pregnancy preeclampsia postpartum cesarean mastitis PID"],
+["Muscle Exam Identify","muscle-exam-lab-identify.html","muscle exam origin insertion action nerve identify clue"],
+["Muscle Exam Actions","muscle-exam-lab-actions.html","action muscle prime mover kinesiology quiz"],
+["Palpation Practical Stations","palpation-practical-stations.html","palpation stations landmarks practical muscle action nerve endangerment"],
+["Clinical Case Lab Set 2","clinical-case-lab-2.html","advanced case contraindication pathology ethics clinical reasoning"],
+["Practical Grading Rubric","practical-grading-rubric.html","practical rubric grade checkoff 100 points safety"],
+["Question Bank Set 5","mblex-question-bank-5.html","50 questions physiology pathology muscle clinical reasoning"]
 ];
 const q=document.getElementById("q"),r=document.getElementById("results");
 function draw(){const s=q.value.toLowerCase().trim();const hits=pages.filter(x=>!s||x.join(" ").toLowerCase().includes(s));r.innerHTML=hits.map(x=>'<div class="item"><a href="'+x[1]+'">'+x[0]+'</a><p class="small">'+x[2]+'</p></div>').join("")||"<p>No indexed match yet. Try a broader term.</p>"}q.addEventListener("input",draw);draw();
