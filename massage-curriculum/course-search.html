@@ -59,7 +59,11 @@ const pages=[
 ["New Routine Anatomy Safety Map","new-routine-anatomy-safety-map.html","routine anatomy safety endangerment scalp back glute leg arm chest neck"],
 ["Practical Skills Checkoff","practical-skills-checkoff-master.html","practical competency checkoff setup draping sequence technique cleanup"],
 ["Question Bank Set 4","mblex-question-bank-4.html","40 questions medication tools business muscle practical safety"],
-["MBLEx Rapid Review","mblex-rapid-review.html","rapid review high yield know cold exam checklist"]
+["MBLEx Rapid Review","mblex-rapid-review.html","rapid review high yield know cold exam checklist"],
+["Red Flags Referral Stop Rules","red-flags-referral-stop-rules.html","stroke heart attack pulmonary embolism DVT anaphylaxis neurological red flag referral stop"],
+["SOAP Documentation Lab","soap-documentation-lab.html","SOAP subjective objective assessment plan documentation notes"],
+["Professional Client Communication","professional-client-communication-lab.html","communication pressure consent pectoral sensitive region referral boundary scope script"],
+["MBLEx Coverage Map","mblex-coverage-map.html","content outline coverage domain anatomy kinesiology pathology effects assessment ethics professional practice"]
 ];
 const q=document.getElementById("q"),r=document.getElementById("results");
 function draw(){const s=q.value.toLowerCase().trim();const hits=pages.filter(x=>!s||x.join(" ").toLowerCase().includes(s));r.innerHTML=hits.map(x=>'<div class="item"><a href="'+x[1]+'">'+x[0]+'</a><p class="small">'+x[2]+'</p></div>').join("")||"<p>No indexed match yet. Try a broader term.</p>"}q.addEventListener("input",draw);draw();
