@@ -31,7 +31,27 @@ const pages=[
 ["Trigger Point Therapy","unit-5-trigger-points.html","trigger point pressure release referred pain"],
 ["Myofascial Release","unit-4-mfr.html","MFR fascia direct indirect sustained"],
 ["Question Bank Set 1","mblex-question-bank-1.html","practice quiz exam questions"],
-["Question Bank Set 2","mblex-question-bank-2.html","practice quiz exam body systems pathology"]
+["Question Bank Set 2","mblex-question-bank-2.html","practice quiz exam body systems pathology"],
+["Sensory Systems","body-system-sensory.html","touch receptor proprioception vision hearing vestibular taste smell nociception pain"],
+["Energetic Anatomy","energetic-anatomy-foundations.html","qi chi meridian yin yang five element chakra dosha Ayurveda"],
+["Emergency Preparedness","emergency-preparedness.html","stroke heart attack anaphylaxis seizure syncope hypoglycemia emergency AED"],
+["Muscle Innervation Master","muscle-innervation-master.html","axillary radial median ulnar femoral obturator sciatic tibial fibular nerve innervation"],
+["Upper Muscle Mastery","muscle-mastery-upper.html","upper body origin insertion action innervation OIA shoulder arm forearm"],
+["Lower & Trunk Muscle Mastery","muscle-mastery-lower-trunk.html","lower body trunk origin insertion action innervation OIA hip thigh leg abdominal"],
+["Head Neck Face Breathing Muscles","muscle-mastery-head-neck-breathing.html","SCM scalene splenius suboccipital masseter temporalis pterygoid diaphragm intercostal"],
+["Pathology Decision Matrix","pathology-decision-matrix.html","postpone local avoid modify referral DVT fracture gout neuropathy infection diabetes"],
+["Gait Posture Observation","assessment-gait-posture-master.html","gait stance swing posture visual observation palpation assessment"],
+["ROM & Resisted Movement","assessment-rom-orthopedic-reasoning.html","active passive resisted ROM end feel contractile assessment"],
+["Clinical Reasoning Strategy","clinical-reasoning-treatment-strategy.html","goal strategy reassessment contraindication response treatment planning"],
+["Intake & Health History","intake-health-history-master.html","intake medication allergy surgery health history verbal consultation"],
+["Draping Consent Boundaries Lab","draping-consent-boundaries-lab.html","draping consent sensitive area privacy boundary lab"],
+["Body Mechanics & Injury Prevention","body-mechanics-self-care.html","table height weight transfer wrist thumb body mechanics self care"],
+["Equipment & Facility Safety","equipment-facility-safety.html","massage table cable bolster heat electrical safety facility"],
+["Healthcare & Business Terminology","business-healthcare-terminology.html","scope referral SOAP LLC sole proprietor insurance revenue profit cash flow"],
+["Massage Modalities Comparison","massage-modalities-comparison.html","Swedish deep tissue MFR trigger point sports shiatsu acupressure reflexology Thai prenatal hot stone"],
+["Muscle Retrieval Drill","muscle-retrieval-drill-50.html","50 muscle quiz origin insertion action innervation retrieval"],
+["Question Bank Set 3","mblex-question-bank-3.html","30 practice quiz sensory infection emergency ethics"],
+["100-Question Mock Exam","mblex-mock-exam-100.html","100 full length mock practice exam MBLEx"]
 ];
 const q=document.getElementById("q"),r=document.getElementById("results");
 function draw(){const s=q.value.toLowerCase().trim();const hits=pages.filter(x=>!s||x.join(" ").toLowerCase().includes(s));r.innerHTML=hits.map(x=>'<div class="item"><a href="'+x[1]+'">'+x[0]+'</a><p class="small">'+x[2]+'</p></div>').join("")||"<p>No indexed match yet. Try a broader term.</p>"}q.addEventListener("input",draw);draw();
