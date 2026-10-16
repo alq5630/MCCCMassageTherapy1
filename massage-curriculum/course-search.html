@@ -51,7 +51,15 @@ const pages=[
 ["Massage Modalities Comparison","massage-modalities-comparison.html","Swedish deep tissue MFR trigger point sports shiatsu acupressure reflexology Thai prenatal hot stone"],
 ["Muscle Retrieval Drill","muscle-retrieval-drill-50.html","50 muscle quiz origin insertion action innervation retrieval"],
 ["Question Bank Set 3","mblex-question-bank-3.html","30 practice quiz sensory infection emergency ethics"],
-["100-Question Mock Exam","mblex-mock-exam-100.html","100 full length mock practice exam MBLEx"]
+["100-Question Mock Exam","mblex-mock-exam-100.html","100 full length mock practice exam MBLEx"],
+["Tools & Special Applications Safety","tools-special-applications-safety.html","hot stone heat cold percussion device cupping suction stretching essential oil tool safety"],
+["Medication Classes Massage Safety","medication-classes-massage-safety.html","NSAID anticoagulant antiplatelet corticosteroid muscle relaxant opioid antihypertensive diuretic insulin antihistamine antidepressant"],
+["Business Operations Hiring Records","business-operations-hiring-records.html","business plan strategic office management hiring interviewing employee contractor client records business records marketing"],
+["New Routine Opening Scalp Warmup","new-routine-opening-scalp-warmup.html","Spinal Walk Over Sheet Sweep Scalp Rake Temple Circles Occipital Cross Neck Nest Crown Hold River Glide Trap Knead Shoulder Sweep"],
+["New Routine Anatomy Safety Map","new-routine-anatomy-safety-map.html","routine anatomy safety endangerment scalp back glute leg arm chest neck"],
+["Practical Skills Checkoff","practical-skills-checkoff-master.html","practical competency checkoff setup draping sequence technique cleanup"],
+["Question Bank Set 4","mblex-question-bank-4.html","40 questions medication tools business muscle practical safety"],
+["MBLEx Rapid Review","mblex-rapid-review.html","rapid review high yield know cold exam checklist"]
 ];
 const q=document.getElementById("q"),r=document.getElementById("results");
 function draw(){const s=q.value.toLowerCase().trim();const hits=pages.filter(x=>!s||x.join(" ").toLowerCase().includes(s));r.innerHTML=hits.map(x=>'<div class="item"><a href="'+x[1]+'">'+x[0]+'</a><p class="small">'+x[2]+'</p></div>').join("")||"<p>No indexed match yet. Try a broader term.</p>"}q.addEventListener("input",draw);draw();
